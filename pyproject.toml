@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "xsiam-shared-personas"
+version = "1.0.0"
+description = "Shared personas, IPs, and threat indicators for XSIAM simulator projects"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["xsiam_shared*"]
